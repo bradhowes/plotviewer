@@ -13,6 +13,9 @@
 		BD1D86A42341443300AF31E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D86A22341443300AF31E9 /* Main.storyboard */; };
 		BD1D86A62341443700AF31E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD1D86A52341443700AF31E9 /* Assets.xcassets */; };
 		BD1D86A92341443700AF31E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD1D86A72341443700AF31E9 /* LaunchScreen.storyboard */; };
+		BD1D86B12341446300AF31E9 /* PlotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1D86B02341446300AF31E9 /* PlotView.swift */; };
+		BD90CF8923464AB700C57433 /* CoreGraphics+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90CF8823464AB700C57433 /* CoreGraphics+Extensions.swift */; };
+		BDE6FC4523472A7000200F3C /* PlotViewLabelsFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE6FC4423472A7000200F3C /* PlotViewLabelsFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BD1D86A52341443700AF31E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD1D86A82341443700AF31E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD1D86AA2341443700AF31E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD1D86B02341446300AF31E9 /* PlotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotView.swift; sourceTree = "<group>"; };
+		BD90CF8823464AB700C57433 /* CoreGraphics+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreGraphics+Extensions.swift"; sourceTree = "<group>"; };
+		BDE6FC4423472A7000200F3C /* PlotViewLabelsFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotViewLabelsFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				BD1D869C2341443300AF31E9 /* AppDelegate.swift */,
+				BD90CF8823464AB700C57433 /* CoreGraphics+Extensions.swift */,
+				BD1D86B02341446300AF31E9 /* PlotView.swift */,
+				BDE6FC4423472A7000200F3C /* PlotViewLabelsFormatter.swift */,
 				BD1D869E2341443300AF31E9 /* SceneDelegate.swift */,
 				BD1D86A02341443300AF31E9 /* ViewController.swift */,
 				BD1D86A22341443300AF31E9 /* Main.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD1D86B12341446300AF31E9 /* PlotView.swift in Sources */,
+				BD90CF8923464AB700C57433 /* CoreGraphics+Extensions.swift in Sources */,
 				BD1D86A12341443300AF31E9 /* ViewController.swift in Sources */,
 				BD1D869D2341443300AF31E9 /* AppDelegate.swift in Sources */,
 				BD1D869F2341443300AF31E9 /* SceneDelegate.swift in Sources */,
+				BDE6FC4523472A7000200F3C /* PlotViewLabelsFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
