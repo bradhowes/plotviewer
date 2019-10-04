@@ -1,10 +1,4 @@
-//
-//  SceneDelegate.swift
-//  PlotTransforms
-//
-//  Created by Brad Howes on 9/29/19.
-//  Copyright © 2019 Brad Howes. All rights reserved.
-//
+// Copyright © 2019 Brad Howes. All rights reserved.
 
 import UIKit
 
@@ -50,4 +44,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
 }
-

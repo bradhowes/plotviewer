@@ -1,15 +1,9 @@
-//
-//  ViewController.swift
-//  PlotTransforms
-//
-//  Created by Brad Howes on 9/29/19.
-//  Copyright © 2019 Brad Howes. All rights reserved.
-//
+// Copyright © 2019 Brad Howes. All rights reserved.
 
 import UIKit
 
 class ViewController: UIViewController {
-    
+
     @IBOutlet weak var signalView: PlotView!
     @IBOutlet weak var minX: UILabel!
     @IBOutlet weak var maxX: UILabel!

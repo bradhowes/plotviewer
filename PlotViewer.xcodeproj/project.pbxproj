@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD1D86992341443200AF31E9 /* PlotTransforms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlotTransforms.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD1D86992341443200AF31E9 /* PlotViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlotViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD1D869C2341443300AF31E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD1D869E2341443300AF31E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BD1D86A02341443300AF31E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		BD1D86902341443200AF31E9 = {
 			isa = PBXGroup;
 			children = (
-				BD1D869B2341443300AF31E9 /* PlotTransforms */,
+				BD1D869B2341443300AF31E9 /* PlotViewer */,
 				BD1D869A2341443200AF31E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +54,12 @@
 		BD1D869A2341443200AF31E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD1D86992341443200AF31E9 /* PlotTransforms.app */,
+				BD1D86992341443200AF31E9 /* PlotViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BD1D869B2341443300AF31E9 /* PlotTransforms */ = {
+		BD1D869B2341443300AF31E9 /* PlotViewer */ = {
 			isa = PBXGroup;
 			children = (
 				BD1D869C2341443300AF31E9 /* AppDelegate.swift */,
@@ -73,15 +73,15 @@
 				BD1D86A72341443700AF31E9 /* LaunchScreen.storyboard */,
 				BD1D86AA2341443700AF31E9 /* Info.plist */,
 			);
-			path = PlotTransforms;
+			path = PlotViewer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BD1D86982341443200AF31E9 /* PlotTransforms */ = {
+		BD1D86982341443200AF31E9 /* PlotViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BD1D86AD2341443700AF31E9 /* Build configuration list for PBXNativeTarget "PlotTransforms" */;
+			buildConfigurationList = BD1D86AD2341443700AF31E9 /* Build configuration list for PBXNativeTarget "PlotViewer" */;
 			buildPhases = (
 				BD1D86952341443200AF31E9 /* Sources */,
 				BD1D86962341443200AF31E9 /* Frameworks */,
@@ -91,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = PlotTransforms;
-			productName = PlotTransforms;
-			productReference = BD1D86992341443200AF31E9 /* PlotTransforms.app */;
+			name = PlotViewer;
+			productName = PlotViewer;
+			productReference = BD1D86992341443200AF31E9 /* PlotViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BD1D86942341443200AF31E9 /* Build configuration list for PBXProject "PlotTransforms" */;
+			buildConfigurationList = BD1D86942341443200AF31E9 /* Build configuration list for PBXProject "PlotViewer" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD1D86982341443200AF31E9 /* PlotTransforms */,
+				BD1D86982341443200AF31E9 /* PlotViewer */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +298,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
-				INFOPLIST_FILE = PlotTransforms/Info.plist;
+				INFOPLIST_FILE = PlotViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.PlotTransforms;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.PlotViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,12 +316,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6SS5ES7E;
-				INFOPLIST_FILE = PlotTransforms/Info.plist;
+				INFOPLIST_FILE = PlotViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.PlotTransforms;
+				PRODUCT_BUNDLE_IDENTIFIER = com.braysoftware.PlotViewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,7 +331,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD1D86942341443200AF31E9 /* Build configuration list for PBXProject "PlotTransforms" */ = {
+		BD1D86942341443200AF31E9 /* Build configuration list for PBXProject "PlotViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD1D86AB2341443700AF31E9 /* Debug */,
@@ -340,7 +340,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BD1D86AD2341443700AF31E9 /* Build configuration list for PBXNativeTarget "PlotTransforms" */ = {
+		BD1D86AD2341443700AF31E9 /* Build configuration list for PBXNativeTarget "PlotViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BD1D86AE2341443700AF31E9 /* Debug */,
