@@ -7,29 +7,45 @@ import UIKit
  with full intensity, and then they fade after a few seconds.
  */
 struct PlotViewLabelsFormatter {
-    private let labels: [UILabel]
-    private let getters: [(CGRect)->CGFloat] // keyPath-like behavior for CGRect boundary values
 
-    private let formatter: NumberFormatter = {
+    /// Collection of tuples that pair a label with a function that gets the associated property from a CGRect
+    private let labels: [(UILabel, (CGRect)->CGFloat)]
+
+    /// Number formatter for the CGFloat values shown in the labels
+    private let labelFormatter: NumberFormatter = {
         let formatter = NumberFormatter()
         formatter.allowsFloats = true
         formatter.alwaysShowsDecimalSeparator = true
         formatter.maximumFractionDigits = 4
         formatter.minimumFractionDigits = 1
+        formatter.minimumIntegerDigits = 1
         return formatter
     }()
 
+    /**
+     Initialize instance with collection of UILabel instances to manage.
+
+     - parameter minX: the smallest X value being displayed
+     - parameter maxX: the largest X value being displayed
+     - parameter minY: the smallest Y value being displayed
+     - parameter maxY: the largest Y value being displayed
+     */
     init(minX: UILabel, maxX: UILabel, minY: UILabel, maxY: UILabel) {
-        self.labels = [minX, maxX, minY, maxY]
-        self.getters = [{$0.minX}, {$0.maxX}, {$0.minY}, {$0.maxY}]
+        self.labels = [(minX, {$0.minX}), (maxX, {$0.maxX}), (minY, {$0.minY}), (maxY, {$0.maxY})]
     }
 
+    /**
+     Update the labels using the values from the given CGRect. Makes the labels visible with the new values, and
+     sets them up to fade after a short delay.
+
+     - parameter frame: the coordinate space to show
+     */
     func update(frame: CGRect) {
-        zip(labels, getters).forEach { label, getter in
-            label.text = formatter.string(for: getter(frame))
+        labels.forEach { label, getter in
+            label.text = labelFormatter.string(for: getter(frame))
             label.alpha = 1.0
         }
-        doFade { self.labels.forEach { $0.alpha = 0.2 } }
+        doFade { self.labels.forEach { $0.0.alpha = 0.2 } }
     }
 
     private func doFade(_ fader: @escaping () -> Void) {

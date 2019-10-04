@@ -16,28 +16,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bg0-ZV-tyX" userLabel="SIgnalView" customClass="PlotView" customModule="PlotViewer" customModuleProvider="target">
-                                <rect key="frame" x="20" y="44" width="374" height="798"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by6-aH-Y2t" userLabel="maxY">
-                                        <rect key="frame" x="170.5" y="8" width="33" height="21"/>
+                                        <rect key="frame" x="190.5" y="10" width="33" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tml-Y7-npg" userLabel="minY">
-                                        <rect key="frame" x="172" y="769" width="30" height="21"/>
+                                        <rect key="frame" x="192" y="787" width="30" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUQ-Mc-gLm" userLabel="minX">
-                                        <rect key="frame" x="8" y="388.5" width="30" height="21"/>
+                                        <rect key="frame" x="10" y="398.5" width="30" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1.0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tvm-J5-DJ3" userLabel="maxX">
-                                        <rect key="frame" x="333" y="388.5" width="33" height="21"/>
+                                        <rect key="frame" x="371" y="398.5" width="33" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -48,21 +48,21 @@
                                     <constraint firstItem="rUQ-Mc-gLm" firstAttribute="centerY" secondItem="bg0-ZV-tyX" secondAttribute="centerY" id="0mp-CB-M7a"/>
                                     <constraint firstItem="Tvm-J5-DJ3" firstAttribute="centerY" secondItem="bg0-ZV-tyX" secondAttribute="centerY" id="4Sh-0t-EPT"/>
                                     <constraint firstItem="Tml-Y7-npg" firstAttribute="centerX" secondItem="bg0-ZV-tyX" secondAttribute="centerX" id="EzE-FL-vUg"/>
-                                    <constraint firstAttribute="trailing" secondItem="Tvm-J5-DJ3" secondAttribute="trailing" constant="8" id="LiC-ap-hLF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tvm-J5-DJ3" secondAttribute="trailing" constant="10" id="LiC-ap-hLF"/>
                                     <constraint firstItem="Tvm-J5-DJ3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rUQ-Mc-gLm" secondAttribute="trailing" constant="16" id="QZj-L6-XBh"/>
-                                    <constraint firstItem="rUQ-Mc-gLm" firstAttribute="leading" secondItem="bg0-ZV-tyX" secondAttribute="leading" constant="8" id="aPz-y3-JX6"/>
+                                    <constraint firstItem="rUQ-Mc-gLm" firstAttribute="leading" secondItem="bg0-ZV-tyX" secondAttribute="leading" constant="10" id="aPz-y3-JX6"/>
                                     <constraint firstItem="by6-aH-Y2t" firstAttribute="centerX" secondItem="bg0-ZV-tyX" secondAttribute="centerX" id="ato-d2-uKt"/>
-                                    <constraint firstAttribute="bottom" secondItem="Tml-Y7-npg" secondAttribute="bottom" constant="8" id="gyk-m3-sH1"/>
-                                    <constraint firstItem="by6-aH-Y2t" firstAttribute="top" secondItem="bg0-ZV-tyX" secondAttribute="top" constant="8" id="pde-BE-8yk"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tml-Y7-npg" secondAttribute="bottom" constant="10" id="gyk-m3-sH1"/>
+                                    <constraint firstItem="by6-aH-Y2t" firstAttribute="top" secondItem="bg0-ZV-tyX" secondAttribute="top" constant="10" id="pde-BE-8yk"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bg0-ZV-tyX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="FTu-wC-A6w"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bg0-ZV-tyX" secondAttribute="trailing" constant="20" id="NWc-g7-bVL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bg0-ZV-tyX" secondAttribute="bottom" constant="20" id="p7a-TJ-G5a"/>
-                            <constraint firstItem="bg0-ZV-tyX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ydj-Aq-mh1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bg0-ZV-tyX" secondAttribute="trailing" id="NWc-g7-bVL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bg0-ZV-tyX" secondAttribute="bottom" id="p7a-TJ-G5a"/>
+                            <constraint firstItem="bg0-ZV-tyX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ydj-Aq-mh1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
