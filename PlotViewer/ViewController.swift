@@ -10,16 +10,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var minY: UILabel!
     @IBOutlet weak var maxY: UILabel!
 
-    var formatter: PlotViewLabelsFormatter?
     var observation: NSKeyValueObservation?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.formatter = PlotViewLabelsFormatter(minX: minX, maxX: maxX, minY: minY, maxY: maxY)
+
+        let formatter = PlotViewLabelsFormatter(minX: minX, maxX: maxX, minY: minY, maxY: maxY)
+        let frameUpdating: (CGRect) -> Void = { formatter.update(frame: $0) }
+
         self.observation = observe(\.signalView.plotViewFrame, options: [.new]) { obj, change in
-            if let frame = change.newValue, let formatter = self.formatter { formatter.update(frame: frame) }
+            guard let frame = change.newValue else { return }
+            frameUpdating(frame)
         }
 
-        self.formatter?.update(frame: signalView.plotViewFrame)
+        frameUpdating(signalView.plotViewFrame)
     }
 }

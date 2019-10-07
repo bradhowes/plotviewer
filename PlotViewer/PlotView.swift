@@ -15,7 +15,6 @@ final class PlotView: UIView {
     /// Minimum plotViewFrame size.
     static let minPlotViewFrameSize = CGSize(width: 0.01, height: 0.01)
 
-
     /// The CA layer that will render the sinusoid.
     private let plotLayer = CAShapeLayer()
 
